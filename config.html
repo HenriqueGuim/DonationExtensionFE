@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Configuration Page </title>
+    <link rel="stylesheet" href="config.css">
+</head>
+<body>
+<div class="extension">
+    <form id = "form">
+        <fieldset>
+            <legend> Access configurations </legend>
+            <fieldset>
+                <legend> StreamLabs </legend>
+                <div>
+                    To get your StreamLabs access token, go to <a href="https://twitchdono-donation-extension-twitch.koyeb.app/streamlabs/authorize" target="_blank">give StreamLabs Donos permission</a> and login onto your account and click "Accept", it will show you the needed keys.
+                </div>
+                <br>
+                <label for="streamLabsToken">Access token: </label><input id="streamLabsToken" type="text" />
+                <br>
+                <label for="streamLabsRefreshToken">Refresh token: </label><input id="streamLabsRefreshToken" type="text" />
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend> Stripe </legend>
+                <div>
+                    To get your Stripe access token, login onto your stripe account and go to <a href="https://dashboard.stripe.com/test/apikeys/create" target="_blank">create Stripe API Key</a>, giver permission to all checkout resources (write) and click "Create key", copy the created key and past down.
+                </div>
+                <br>
+                <label for="stripeToken">Access token: </label><input id="stripeToken" type="text" />
+            </fieldset>
+
+            <br>
+
+            <button type="button" id="save-button">Save</button>
+        </fieldset>
+    </form>
+</div>
+
+<script type="module" src="config.js"></script>
+<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+</body>
+
+</html>

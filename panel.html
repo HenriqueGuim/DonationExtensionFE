@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donations</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <div>
+        <form>
+        <h1><label for="amount">Donation Amount: </label><input id="amount" type="number" min="2" value="2" required /></h1>
+        <h1><label for="message">Donation Message: </label> <input id="message" type="text" required /></h1>
+        <h1><label for="user">Username: </label><input id="user" type="text" required /></h1>
+        <button type="button" id="donate-button">Donate</button>
+        </form>
+    </div>
+    <script type="module" src="panel.js"></script>
+</body>
+</html>
